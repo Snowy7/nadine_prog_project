@@ -1,6 +1,4 @@
 from tkinter import *
-import game as solitaire_main
-
 pass_key = "1234"
 
 # Initialize the main window
@@ -30,6 +28,7 @@ def equlbut():
         # check if the input is the password
         if operator == pass_key:
             textin.set("Correct Password")
+            import game as solitaire_main
             solitaire_main.main()
             return
         
